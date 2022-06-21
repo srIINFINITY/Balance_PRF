@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+<link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+<body onload="initialize()">
+    <nav class="navigation">
+        <div class="logo">
+          <h4>DASHBOARD</h4>
+          
+        </div>
+    <div id="portos"><select name="Portos" id="portoSelect" onchange=carregarPesagens()></select></div>
+
+      </nav>
+  
+    <section>
+        <div class="cards">
+          <div class="card_1">
+            <div class="information">
+              <div class="result">
+                <h3 id="pesagensDiarias"></h3>
+                <p>pesagens</p>
+              </div>
+              <div class="icon">
+                <img src="./scr/img/icons8-balance-96.png" alt="" />
+              </div>
+            </div>
+            <div class="title">
+              <h2>Pesagens Diaria</h2>
+            </div>
+          </div>
+  
+          <div class="card_2">
+            <div class="information">
+              <div class="result">
+                <h3 id="PesoBruto">00</h3>
+                <p>Peso bruto</p>
+              </div>
+              <div class="icon">
+                <img
+                  src="./scr/img/icons8-símbolo-de-equilíbrio-100.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="title">
+              <h2>Peso Bruto</h2>
+            </div>
+          </div>
+  
+          <div class="card_3">
+            <div class="information">
+              <div class="result">
+                <h3 id="PesoLiquido">00</h3>
+                <p>Liquido</p>
+              </div>
+              <div class="icon">
+                <img
+                  src="./scr/img/icons8-símbolo-de-equilíbrio-1000.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="title">
+              <h2>Peso Liquido</h2>
+            </div>
+          </div>
+  
+          <div class="card_4">
+            <div class="information">
+              <div class="result">
+                <h3 id="pendentes">00</h3>
+                <p>pendentes</p>
+              </div>
+              <div class="icon">
+                <img src="./scr/img/icons8-balance-64.png" alt="" />
+              </div>
+            </div>
+            <div class="title">
+              <h2>Cargasendentes</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+    <section class="table">
+        <table class="content-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>1° Pesagem</th>
+              <th>2° Pesagem</th>
+              <th>data 1° Pesagem</th>
+              <th>data 2° Pesagem</th>
+              <th>Autorização</th>
+              <th>Placa do Veiculo</th>
+            </tr>
+          </thead>
+          <tbody id="pesagens">
+          </tbody>
+        </table>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
