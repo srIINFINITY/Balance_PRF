@@ -12,7 +12,7 @@ function initialize(){
 
 function carregarPesagens(){
     let selectBox = document.getElementById("portoSelect");
-    let dados = acessarAPI(`http://balancaunama.herokuapp.com/pesagens/porto/${selectBox.options[selectBox.selectedIndex].value}`);
+    let dados = acessarAPI(`https://balancaunama.herokuapp.com/pesagens/porto/${selectBox.options[selectBox.selectedIndex].value}`);
     let pesagens = JSON.parse(dados);
     let pesoBruto = 0;
     let pesoLiquido = 0;
@@ -56,7 +56,7 @@ function carregarDadosAPI() {
 
 
 function carregarPortos(){
-    let dados = acessarAPI('http://balancaunama.herokuapp.com/portos');
+    let dados = acessarAPI('https://balancaunama.herokuapp.com/portos');
 
     let portos = JSON.parse(dados);
 
